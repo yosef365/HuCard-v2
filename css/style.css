@@ -1,0 +1,129 @@
+:root{
+  --primary:#2563eb;
+  --bg:#eef3fb;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --card:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Inter,sans-serif;
+    background:var(--bg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:430px;
+    background:var(--card);
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,.12);
+}
+
+.cover{
+    height:170px;
+    background:linear-gradient(135deg,var(--primary),#4f46e5);
+    position:relative;
+}
+
+.cover img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.avatar{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    position:absolute;
+    left:50%;
+    bottom:-60px;
+    transform:translateX(-50%);
+    background:white;
+}
+
+.content{
+    padding:80px 25px 25px;
+    text-align:center;
+}
+
+.name{
+    font-size:28px;
+    font-weight:800;
+    color:var(--text);
+}
+
+.title{
+    color:var(--muted);
+    margin-top:6px;
+}
+
+.company{
+    color:var(--primary);
+    font-weight:600;
+    margin-top:6px;
+}
+
+.bio{
+    margin-top:15px;
+    color:#555;
+    line-height:1.6;
+}
+
+.contact-list{
+    margin-top:25px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    color:var(--text);
+    padding:14px;
+    border-radius:14px;
+    background:#f8fafc;
+    transition:.2s;
+}
+
+.contact-item:hover{
+    transform:translateY(-2px);
+    background:#eef2ff;
+}
+
+.contact-item i{
+    width:40px;
+    color:var(--primary);
+    font-size:18px;
+}
+
+.buttons{
+    margin-top:22px;
+    display:flex;
+    gap:10px;
+}
+
+.btn{
+    flex:1;
+    border:none;
+    cursor:pointer;
+    border-radius:12px;
+    padding:14px;
+    background:var(--primary);
+    color:white;
